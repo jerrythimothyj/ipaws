@@ -14,6 +14,7 @@
 		        		
 		        		if(
 		        			$rootScope.apiTimings.length > 15 && 
+		        			sessionStorage.currentUser && 
 		        			sessionStorage.currentUser.toLowerCase() != 'luke skywalker' &&  
 		        			(($rootScope.apiTimings[15] - $rootScope.apiTimings[0])/1000)/60
 		        		) {
