@@ -11,12 +11,14 @@ angular.module('swapi')
         	if(newValue == 'login') {
 	        	sessionStorage.removeItem('currentUser');
 	            $rootScope.currentUser = '';
+                $rootScope.apiTimings = [];
 	        }
         });
 
         $scope.logout = () => {
         	sessionStorage.removeItem('currentUser');
             $rootScope.currentUser = '';
+            $rootScope.apiTimings = [];
             $state.go('login');
         }
     });
