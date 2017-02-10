@@ -1,0 +1,13 @@
+<div class="bubbleLegends hidden-lg">
+	<table class="bubbleLegend">
+		<tr data-ng-repeat="data in bubbleData">
+		 	<td>
+		 		<div class="legendColor" 
+		 			  style="background-color: {{bubbleColors['bubble'+$index]}}">
+		 		</div>
+		 	</td>
+		 	<td>{{data.name}}</td>
+		 	<td>{{data.population}}</td>
+		</tr>
+	</table>
+</div>
